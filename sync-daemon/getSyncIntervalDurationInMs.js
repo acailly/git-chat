@@ -1,3 +1,3 @@
 module.exports = function () {
-  return 1000;
+  return 30000;
 };
