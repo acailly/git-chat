@@ -17,7 +17,7 @@ module.exports = async function () {
   let messages = [];
   for (const chatFile of chatFiles) {
     await processLineByLine(chatFile, (line) => {
-      const [timestamp, author, content] = line.split(";");
+      const [timestamp, author, content] = line.split(",");
       const newMessage = { timestamp, author, content };
       messages.push(newMessage);
     });

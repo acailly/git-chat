@@ -5,7 +5,7 @@ const getChatHistory = require("./client-cli/getChatHistory");
 async function demo() {
   await sync();
 
-  await saySomething("ALICE", "Hello Bob");
+  await saySomething("Alice", "Hello Bob");
 
   await sync();
 

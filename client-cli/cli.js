@@ -3,6 +3,7 @@ const prompt = require("./prompt");
 const getIdentity = require("../src/getIdentity");
 const saySomething = require("../src/saySomething");
 const getChatHistory = require("./getChatHistory");
+const startSyncDaemon = require("../sync-daemon/startSyncDaemon");
 
 async function loop() {
   const me = getIdentity();
@@ -34,4 +35,5 @@ async function loop() {
   });
 }
 
+startSyncDaemon();
 loop();
